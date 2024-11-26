@@ -14,7 +14,10 @@ import org.springframework.web.bind.annotation.*;
 public class SurveyController {
 
     private final SurveyService service;
-
+    @GetMapping
+    public String sayHello(){
+	return "Hello";
+     }
     // Create
     @PostMapping
     public ResponseEntity<SurveyResponse> saveSurvey(@RequestBody SurveyResponse survey) {
