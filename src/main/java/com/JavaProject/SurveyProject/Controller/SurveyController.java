@@ -16,7 +16,7 @@ public class SurveyController {
     private final SurveyService service;
     @GetMapping
     public String sayHello(){
-	return "Helloooooo";
+	return "Hello";
      }
     // Create
     @PostMapping
